@@ -1,3 +1,4 @@
+'use strict'
 
 // Read existing notes from localStorage
 const getSavedNotes = () => {
@@ -7,8 +8,7 @@ const getSavedNotes = () => {
         return notesJSON ? JSON.parse(notesJSON) : []
     } catch (e) {
         return []
-    }
-    
+    } 
 }
 // Save the notes to localStorage
 const saveNotes = (notes) => {
